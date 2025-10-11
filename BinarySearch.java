@@ -37,6 +37,6 @@ class BinarySearch{
 // time complexity is logn 
 // log16 = ??
 
-    2^(?) = 16
+    //2^(?) = 16
 
-    ???? means log
+    //???? means log
