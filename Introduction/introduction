@@ -1,0 +1,15 @@
+Hi, my name is Sohan Patil. I’m a Full Stack Developer with around 3+ years of experience, currently working at Lowe’s Services India as a Software Engineer.
+
+My core expertise is in building developer platforms and CI/CD systems. On the backend, I work mainly with Golang and gRPC to build scalable services, and on the frontend I use React.js to create dashboards and tools that developers use to manage deployments.
+
+At Lowe’s, I work on an internal Continuous Delivery platform called Thor, where I developed backend services that handle deployments across multiple environments like on-prem, GCP, stores, and RDC. I also built UI features that allow developers to configure and monitor pipelines easily.
+
+One of the major contributions I made was leading the migration of our platform from the genpop network zone to the syscontrol zone, where I worked on firewall rules, database connectivity, and cross-zone networking to make the system more secure and reliable.
+
+I’ve also worked on an internal CDN deployment platform, where users can deploy static assets and code to CDN, and I contributed to both backend and frontend parts of that system.
+
+From the DevOps side, I work with Kubernetes, Docker, ArgoCD, and Rancher, and I helped automate deployments from our CI platform Loci to Thor, so after successful builds, images automatically get deployed to lower environments. This reduced a lot of manual effort and improved developer experience.
+
+Before Lowe’s, I worked at TCS as a System Engineer, where I mainly developed backend services using Java and Spring Boot.
+
+Overall, I enjoy working on systems that improve reliability, automation, and developer productivity, and I’m looking forward to working on scalable backend and platform engineering problems in my next role.
