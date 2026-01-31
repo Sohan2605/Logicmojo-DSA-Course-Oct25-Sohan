@@ -7,4 +7,5 @@ func main(){
 	variablesPractise()
 	conditions()
 	loops()
+	sumOfNumbers()
 }
