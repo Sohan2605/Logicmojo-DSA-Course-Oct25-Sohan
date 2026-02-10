@@ -1,0 +1,51 @@
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func verticalTraversal(root *TreeNode) [][]int {
+   nodes:=[][]int{}
+
+   var dfs func(node *TreeNode,row int,col int)
+
+   dfs = func(node *TreeNode , row int ,col int){
+       if (node == nil){
+         return
+       }
+       nodes = append(nodes , []int{col,row,node.Val})
+       dfs(node.Left,row+1,col-1)
+       dfs(node.Right,row+1,col+1)
+   }
+   
+   dfs(root,0,0)
+   sort.Slice(nodes ,func(i,j int)bool{
+      if nodes[i][0] == nodes[j][0]{
+          if nodes[i][1] == nodes[j][1]{
+             return nodes[i][2] < nodes[j][2]
+          }
+          return nodes[i][1] < nodes[j][1]
+      }
+      return nodes[i][0] < nodes[j][0]
+   })
+
+
+   result:=[][]int{}
+   prevCol:= math.MinInt
+
+   for _ , n := range nodes{
+       c := n[0]
+       v := n[2]
+
+       if c != prevCol {
+         result = append(result ,[]int{})
+         prevCol = c
+       }
+
+       result[len(result)-1] = append(result[len(result)-1] , v)    
+   }
+
+   return result
+}
